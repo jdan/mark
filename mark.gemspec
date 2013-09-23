@@ -1,3 +1,6 @@
+$:.push File.expand_path("../lib", __FILE__)
+require 'mark/version'
+
 ## This is the rakegem gemspec template. Make sure you read and understand
 ## all of the comments. Some sections require modification, and others can
 ## be deleted if you don't need them. Once you understand the contents of
@@ -13,7 +16,7 @@ Gem::Specification.new do |s|
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
   s.name              = 'mark'
-  s.version           = '0.0.1'
+  s.version           = Mark::VERSION
   s.date              = '2013-09-23'
   s.rubyforge_project = 'boom'
 
@@ -65,6 +68,7 @@ Gem::Specification.new do |s|
     lib/mark/label.rb
     lib/mark/jump.rb
     lib/mark/error.rb
+    lib/mark/version.rb
     bin/mark
     mark.gemspec
   ]
