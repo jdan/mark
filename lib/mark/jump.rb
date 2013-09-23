@@ -5,7 +5,7 @@ module Mark
     def jump(label, *argv)
       target = @marks[label]
 
-      p `export PWD=target`
+      puts "cd #{target}"
     end
   end
 end
