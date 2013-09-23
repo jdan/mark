@@ -67,6 +67,7 @@ Gem::Specification.new do |s|
     lib/mark/main.rb
     lib/mark/label.rb
     lib/mark/jump.rb
+    lib/mark/storage.rb
     lib/mark/error.rb
     lib/mark/version.rb
     bin/mark

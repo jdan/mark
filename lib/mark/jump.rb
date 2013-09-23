@@ -1,7 +1,11 @@
 # coding: utf-8
 
 module Mark
-  def self.jump(label, *argv)
-    puts "Jumping to #{label}"
+  class << self
+    def jump(label, *argv)
+      target = @marks[label]
+
+      p `export PWD=target`
+    end
   end
 end

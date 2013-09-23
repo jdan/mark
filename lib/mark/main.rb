@@ -2,6 +2,8 @@
 
 module Mark
   def self.process(command, *argv)
+    self.load
+
     case command
     when 'label'
       self.label(*argv)
@@ -10,5 +12,7 @@ module Mark
     else
       self.error!(command, *argv)
     end
+
+    self.save
   end
 end

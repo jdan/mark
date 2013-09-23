@@ -1,7 +1,11 @@
 # coding: utf-8
 
 module Mark
-  def self.label(label, *argv)
-    puts "Saving #{label}"
+  class << self
+    CWD = Dir.pwd
+
+    def label(label, *argv)
+      @marks[label] = argv.first || CWD
+    end
   end
 end
