@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.name              = 'mark'
   s.version           = Mark::VERSION
   s.date              = '2013-09-23'
-  s.rubyforge_project = 'boom'
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
@@ -32,7 +31,7 @@ Gem::Specification.new do |s|
   s.authors  = ["Jordan Scales"]
   s.email    = 'scalesjordan@gmail.com'
   s.homepage = 'https://github.com/jdan/mark'
-  # s.license  = 'MIT'
+  s.license  = 'MIT'
 
   ## This gets added to the $LOAD_PATH so that 'lib/NAME.rb' can be required as
   ## require 'NAME.rb' or'/lib/NAME/file.rb' can be as require 'NAME/file.rb'
